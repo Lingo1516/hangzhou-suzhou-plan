@@ -25,6 +25,12 @@
   td{border-bottom:1px solid #E0E6EC;padding:8px 10px;vertical-align:top}
   td.t{white-space:nowrap;font-weight:700;color:#1F3864;width:118px}
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}
+  .showgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:10px}
+  .showgrid .card img{height:230px}
+  .showgrid .b p{font-size:16px;color:#37474F}
+  .showgrid .tag{display:inline-block;background:#C00000;color:#fff;border-radius:6px;padding:0 10px;font-size:14.5px;font-weight:700;margin-top:6px}
+  .showgrid .tag.free{background:#2E7D32}
+  .showgrid .tag.off{background:#616161}
   .card{border:1px solid #E0E6EC;border-radius:12px;overflow:hidden;background:#fff}
   .card img{width:100%;height:160px;object-fit:cover;display:block}
   .card .b{padding:10px 14px 12px}
@@ -50,6 +56,8 @@
     .wrap{padding:14px 10px 40px}
     section{padding:18px 15px;border-radius:14px}
     .grid{grid-template-columns:1fr}
+    .showgrid{grid-template-columns:1fr}
+    .showgrid .card img{height:210px}
     .card img{height:190px}
     table,tbody,tr,td{display:block;width:100%}
     table tr:has(th){display:none}
@@ -66,7 +74,7 @@
   <p>2027 年 1 月 18 日（一）→ 1 月 22 日（五）｜每日行程・附近遊玩・交通方式，一頁看完</p>
 </div>
 <nav class="nav">
-  <a href="#overview">總覽</a><a href="#days">每日行程</a><a href="#nearby">附近遊玩</a><a href="#transport">交通方式</a><a href="#shows">表演節目</a><a href="#food">美食</a><a href="#checklist">出發清單</a>
+  <a href="#overview">總覽</a><a href="#hotels">飯店住宿</a><a href="#days">每日行程</a><a href="#nearby">附近遊玩</a><a href="#transport">交通方式</a><a href="#shows">表演節目</a><a href="#food">美食</a><a href="#checklist">出發清單</a>
 </nav>
 <div class="wrap">
 
@@ -85,6 +93,14 @@
     <tr><td>Day 4｜1/21（四）</td><td>山塘街遊船、觀前街得月樓，下午高鐵回杭州</td><td>杭州・梅苑悅享</td></tr>
     <tr><td>Day 5｜1/22（五）</td><td>南宋御街買伴手禮，晚上飛回台灣</td><td>—</td></tr>
   </table>
+</section>
+
+<section id="hotels">
+  <h2>飯店住宿</h2>
+  <div class="showgrid">
+    <div class="card"><img src="img/hotel_hangzhou.jpg" alt="杭州梅苑悅享酒店"><div class="b"><b>杭州・梅苑悅享酒店（住 3 晚：1/18、1/19、1/21）</b><p>西湖湖濱一帶，延安路／湖濱路附近，<b>步行 8 分鐘到西湖</b>，旁邊就是地鐵 1 號線龍翔橋站。4 星，房間大、早餐豐富，評價說房間寬敞安靜。約 NT$2,800–3,400／晚（含早餐），入住 14:00 後、退房 12:00 前。Trip.com 搜尋「浙江梅地亞酒店 西湖湖濱店」。</p></div></div>
+    <div class="card"><img src="img/hotel_suzhou.jpg" alt="蘇州平江華府酒店"><div class="b"><b>蘇州・平江華府酒店（住 1 晚：1/20）</b><p>姑蘇區平江路旁，<b>步行 100 公尺進平江路老街、15 分鐘到拙政園</b>，出門就是小橋流水。5 星級評價 9.5/10，早餐 07:30–10:00 中西式自助。約 NT$2,800–3,200／晚，入住 14:00 後、退房 12:00 前。Trip.com 搜尋「蘇州平江華府酒店」。</p></div></div>
+  </div>
 </section>
 
 <section id="days">
@@ -220,13 +236,12 @@
 <section id="shows">
   <h2>表演節目</h2>
   <p>這趟能看到的、看不到的都先講清楚，排進行程的已經寫進每日行程表：</p>
-  <table>
-    <tr><th style="width:190px">節目</th><th>內容</th><th style="width:210px">時間・票價</th><th style="width:150px">安排</th></tr>
-    <tr><td><b>宋城千古情</b><br>杭州宋城（之江路）</td><td>室內大型歌舞秀，被稱為「世界三大名秀」之一，以杭州歷史故事為主軸，水、火、舞台機關場面大，約 70 分鐘。冬季園區另有宋韻燈會，晚上不無聊。</td><td>每日多場（常見 14:30／16:30／19:30，以官方公告為準）<br>門票約 ¥310–380（含宋城入園）</td><td><b>Day 4 晚上</b><br>19:30 場</td></tr>
-    <tr><td><b>西湖音樂噴泉</b><br>湖濱三公園</td><td>湖面上的水舞燈光秀，配《梁祝》等樂曲，免費、開放式觀賞，人多要提早到佔位；下雨、強風會取消。</td><td>每晚約 19:30 一場<br>約 20 分鐘，免費</td><td><b>Day 2 晚上</b><br>雷峰塔之後</td></tr>
-    <tr><td><b>蘇州評彈</b><br>琵琶語評彈茶館（平江路）</td><td>吳儂軟語配琵琶、三弦，蘇州最具代表性的傳統曲藝；點一杯茶慢慢聽，《聲聲慢》是最有名的曲目。</td><td>有午場與晚場<br>票價 ¥58／88／128 三檔，建議現場選座</td><td><b>Day 3 晚上</b><br>平江路散步時</td></tr>
-    <tr><td><b>印象西湖《最憶是杭州》</b><br>岳湖水面上</td><td>張藝謀導演的大型水上實景秀，舞台就在湖面上，是杭州最有名的表演——但戶外水上演出<b>每年冬季停演</b>。</td><td>演出季約 3 月–12 月中，每晚 19:40<br>票價 ¥310 起</td><td><b>⚠️ 本次 1/18–22 停演</b><br>出發前 12 月再確認官方公告</td></tr>
-  </table>
+  <div class="showgrid">
+    <div class="card"><img src="img/show_songcheng.jpg" alt="宋城千古情"><div class="b"><b>宋城千古情｜杭州宋城（之江路）</b><p>室內大型歌舞秀，被稱為「世界三大名秀」之一，以杭州歷史故事為主軸，水、火、舞台機關場面大，約 70 分鐘；冬季園區另有宋韻燈會。每日多場（常見 14:30／16:30／19:30，以官方公告為準），門票約 ¥310–380（含宋城入園）。</p><span class="tag">Day 4 晚上 19:30 場</span></div></div>
+    <div class="card"><img src="img/show_fountain.jpg" alt="西湖音樂噴泉"><div class="b"><b>西湖音樂噴泉｜湖濱三公園</b><p>湖面上的水舞燈光秀，配《梁祝》等樂曲，開放式觀賞、人多要提早到佔位；下雨、強風會取消。每晚約 19:30 一場，約 20 分鐘。</p><span class="tag free">免費｜Day 2 晚上・雷峰塔之後</span></div></div>
+    <div class="card"><img src="img/show_pingtan.jpg" alt="蘇州評彈"><div class="b"><b>蘇州評彈｜琵琶語評彈茶館（平江路）</b><p>吳儂軟語配琵琶、三弦，蘇州最具代表性的傳統曲藝；點一杯茶慢慢聽，《聲聲慢》是最有名的曲目。有午場與晚場，票價 ¥58／88／128 三檔，建議現場選座。</p><span class="tag">Day 3 晚上・平江路散步時</span></div></div>
+    <div class="card"><img src="img/show_impression.jpg" alt="印象西湖最憶是杭州"><div class="b"><b>印象西湖《最憶是杭州》｜岳湖水面上</b><p>張藝謀導演的大型水上實景秀，舞台就在湖面上（照片就是演出畫面），是杭州最有名的表演——但戶外水上演出每年冬季停演，演出季約 3 月–12 月中、每晚 19:40、票價 ¥310 起。</p><span class="tag off">⚠️ 本次 1/18–22 停演・出發前 12 月再確認</span></div></div>
+  </div>
   <div class="tip">💡 想多看一場：宋城千古情若 Day 4 臨時沒票，下午場（14:30／16:30）可改排 Day 2 下午（靈隱寺提早結束後前往），但一天會比較趕，建議優先守 Day 4 晚場並提早訂票。</div>
 </section>
 
@@ -241,7 +256,6 @@
     <div class="card"><img src="img/shrimpmnoodles.jpg" alt="三蝦麵"><div class="b"><b>平江路三蝦麵</b><p>蘇州麵的代表，蝦仁、蝦腦、蝦籽三鮮合一。</p></div></div>
     <div class="card"><img src="img/squirrelfish.jpg" alt="松鼠桂魚"><div class="b"><b>松鼠桂魚</b><p>松鶴樓招牌，Day 3 晚餐主菜。</p></div></div>
     <div class="card"><img src="img/biluoshrimp.jpg" alt="碧螺蝦仁"><div class="b"><b>碧螺蝦仁</b><p>得月樓招牌，Day 4 中午在蘇州吃。</p></div></div>
-    <div class="card"><img src="img/hotel_hangzhou.jpg" alt="梅苑悅享酒店"><div class="b"><b>梅苑悅享酒店</b><p>杭州住 3 晚，湖濱／延安路，步行 8 分鐘到西湖。</p></div></div>
   </div>
 </section>
 
